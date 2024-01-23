@@ -32,11 +32,14 @@ return {
 					pylsp = {
 						plugins = {
 							pycodestyle = {
-								maxLineLength = 100,
+								maxLineLength = 200,
 							},
 						},
 					},
 				},
+			})
+			lspconfig.csharp_ls.setup({
+				capabilities = capabilities,
 			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
