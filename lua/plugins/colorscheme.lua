@@ -1,7 +1,9 @@
-
-return { 
-    "rebelot/kanagawa.nvim",
+return {
+    "polirritmico/monokai-nightasty.nvim",
+    lazy = false,
+    priority = 1000,
     config = function()
-        vim.cmd("colorscheme kanagawa-dragon")
-    end
+        vim.opt.background = "dark" -- default to dark or light style
+        vim.cmd.colorscheme("monokai-nightasty")
+    end,
 }
