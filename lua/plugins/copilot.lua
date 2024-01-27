@@ -10,6 +10,7 @@ return {
 				keymap = {
 					accept = "<C-L>",
 					accept_word = "<C-l>",
+					accept_line = "<C-j>",
 				},
 			},
 		})
