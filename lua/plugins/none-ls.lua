@@ -9,6 +9,7 @@ return {
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
                 null_ls.builtins.formatting.csharpier,
+                null_ls.builtins.formatting.rubocop,
             },
         })
         vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

@@ -26,6 +26,9 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
 			})
