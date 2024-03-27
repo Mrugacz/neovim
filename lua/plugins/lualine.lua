@@ -1,11 +1,12 @@
 return {
-    "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-        require("lualine").setup({
-            options = {
+	"nvim-lualine/lualine.nvim",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
+	config = function()
+		vim.cmd.colorscheme("carbonfox")
+		require("lualine").setup() -- {
+		--[[ options = {
                 theme = "monokai-nightasty",
             },
-        })
-    end,
+        }) --]]
+	end,
 }
